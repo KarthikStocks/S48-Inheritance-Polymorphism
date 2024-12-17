@@ -1,0 +1,106 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f7f9fc;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  color: #333;
+  font-size: 24px;
+}
+
+header button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header button:hover {
+  background-color: #0056b3;
+}
+
+.messages {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.messages h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.message-list p {
+  background: #e9f5ff;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Media Queries for responsiveness */
+
+/* Medium Screens (tablets) */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 22px;
+  }
+
+  header button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .messages {
+    max-width: 90%;
+  }
+
+  .message-list p {
+    font-size: 14px;
+  }
+}
+
+/* Small Screens (phones) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 18px;
+  }
+
+  header button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .messages {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  .message-list p {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
